@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "github-build": "ng build --prod --base-href \"/zmieniacz-liczb/\"",
+    "githubpages": "ng deploy --base-href=https://zimnytunczyk.github.io/zmieniacz-liczb/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

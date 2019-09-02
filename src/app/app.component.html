@@ -29,9 +29,9 @@
         <div class="col-2 text-center h3">rzymska</div>
       </div>
       <div id="program3" class="row">
-        <div class="col-2 text-center h3">kwadrat1</div>
+        <input type="text" class="col-2 text-center h3 border-dark border" [(ngModel)]="liczbaArabska">
         <div class="col-2 text-center h3">------></div>
-        <div class="col-2 text-center h3">kwadrat2</div>
+        <div class="col-2 text-center h3 border-dark border">{{this.zamienNaRzymska()}}</div>
       </div>
     </div>
   </div>

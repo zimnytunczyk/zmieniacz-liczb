@@ -7,4 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'zmieniacz-liczb';
+  liczbaArabska: number;
+
+  zamienNaRzymska(): string {
+    if (!this.liczbaArabska) {
+      return '';
+    }
+    if (isNaN(this.liczbaArabska)) {
+      return 'błąd';
+    } else {
+      const liczba = Number(this.liczbaArabska);
+      if (liczba === 1) {
+        return 'I';
+      } else {
+        return 'not implemented';
+      }
+    }
+  }
 }
