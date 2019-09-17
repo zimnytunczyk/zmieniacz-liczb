@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {ZmieniaczLiczbService} from "./services/zmieniacz-liczb.service";
 
 @Component({
   selector: 'app-root',
@@ -7,21 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'zmieniacz-liczb';
-  liczbaArabska: number;
+  liczbaArabska: string;
+  zmieniaczLiczb: ZmieniaczLiczbService = new ZmieniaczLiczbService();
 
   zamienNaRzymska(): string {
-    if (!this.liczbaArabska) {
-      return '';
-    }
-    if (isNaN(this.liczbaArabska)) {
-      return 'błąd';
-    } else {
-      const liczba = Number(this.liczbaArabska);
-      if (liczba === 1) {
-        return 'I';
-      } else {
-        return 'not implemented';
-      }
-    }
+    return this.zmieniaczLiczb.zmienArabskaNaRzymska(this.liczbaArabska);
   }
 }
