@@ -32,4 +32,23 @@ describe('Testy', () => {
     expect(zmieniaczLiczb.zmienArabskaNaRzymska('6')).toEqual('VI');
   });
 
+  it('7 -> VII', () => {
+    const zmieniaczLiczb = new ZmieniaczLiczbService();
+    expect(zmieniaczLiczb.zmienArabskaNaRzymska('7')).toEqual('VII');
+  });
+
+  it('8 -> VIII', () => {
+    const zmieniaczLiczb = new ZmieniaczLiczbService();
+    expect(zmieniaczLiczb.zmienArabskaNaRzymska('8')).toEqual('VIII');
+  });
+
+  it('9 -> IX', () => {
+    const zmieniaczLiczb = new ZmieniaczLiczbService();
+    expect(zmieniaczLiczb.zmienArabskaNaRzymska('9')).toEqual('IX');
+  });
+
+  it('10 -> X', () => {
+    const zmieniaczLiczb = new ZmieniaczLiczbService();
+    expect(zmieniaczLiczb.zmienArabskaNaRzymska('10')).toEqual('X');
+  });
 });

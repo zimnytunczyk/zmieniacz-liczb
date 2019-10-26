@@ -21,6 +21,16 @@ export class ZmieniaczLiczbService {
       return 'IV';
     } else if (liczba === 5) {
       return 'V';
+    } else if (liczba === 6) {
+      return 'VI'
+    } else if (liczba === 7) {
+      return 'VII'
+    } else if (liczba === 8) {
+      return 'VIII'
+    } else  if (liczba === 9){
+      return 'IX'
+    } else if (liczba === 10){
+      return 'X'
     }
     return 'nie zakodowane';
   }
