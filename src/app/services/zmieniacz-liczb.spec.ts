@@ -51,4 +51,9 @@ describe('Testy', () => {
     const zmieniaczLiczb = new ZmieniaczLiczbService();
     expect(zmieniaczLiczb.zmienArabskaNaRzymska('10')).toEqual('X');
   });
+
+  it('1000 -> M', () => {
+    const zmieniaczLiczb = new ZmieniaczLiczbService();
+    expect(zmieniaczLiczb.zmienArabskaNaRzymska('1000')).toEqual('M');
+  });
 });
